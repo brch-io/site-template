@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Container } from "theme-ui"
 
 export default (props) => (
     <div
@@ -16,7 +16,9 @@ export default (props) => (
           alignItems: 'center',
           variant: 'layout.header',
         }}>
-        Header content
+        <Container p={4}>
+          Header content
+        </Container>
       </header>
       <main
         sx={{
@@ -26,7 +28,7 @@ export default (props) => (
         }}>
         <div
           sx={{
-            maxWidth: 768,
+            maxWidth: 1024,
             mx: 'auto',
             px: 3,
             variant: 'layout.container',
@@ -39,7 +41,9 @@ export default (props) => (
           width: '100%',
           variant: 'layout.footer',
         }}>
-        Footer content
+        <Container p={4}>
+          Footer content
+        </Container>
       </footer>
     </div>
   )

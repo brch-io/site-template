@@ -8,20 +8,6 @@ const IndexPage = () => {
       <Container p={4}>
         <Heading>This is a heading</Heading>
         <Heading as='h3'>Subhead</Heading>
-        <Flex>
-          <Box p={2} bg="primary" sx={{ flex: '1 1 auto' }}>
-            Flex
-          </Box>
-          <Box p={2} bg="muted">
-            Box
-          </Box>
-        </Flex>
-        <Grid gap={2} columns={[2, null, 4]}>
-          <Box bg="primary">Box</Box>
-          <Box bg="muted">Box</Box>
-          <Box bg="primary">Box</Box>
-          <Box bg="muted">Box</Box>
-        </Grid>
         <Box>
           <Paragraph>Hello World!</Paragraph>
           <Paragraph variant="block">
@@ -40,6 +26,20 @@ const IndexPage = () => {
           </Paragraph>
           <Paragraph as="small" sx={{ fontStyle: 'italic' }}>Something a bit less important</Paragraph>
         </Box>
+        <Flex>
+          <Box p={2} bg="primary" sx={{ flex: '1 1 auto' }}>
+            Flex
+          </Box>
+          <Box p={2} bg="muted">
+            Box
+          </Box>
+        </Flex>
+        <Grid gap={2} columns={[2, null, 4]}>
+          <Box bg="primary">Box</Box>
+          <Box bg="muted">Box</Box>
+          <Box bg="primary">Box</Box>
+          <Box bg="muted">Box</Box>
+        </Grid>
       </Container>
     </Layout>
   )

@@ -20,7 +20,12 @@ This repo is a github template for creation of Gatsby sites configured through t
 ### Setup locally
 `cd site`
 `yarn`
-`yarn develop
+
+### local development
+
+`yarn develop`
+View the site at `http://localhost:8000`
+Also the style-guide at `http://localhost:8000/style-guide`
 
 ## For deploy
 ### AWS setup
