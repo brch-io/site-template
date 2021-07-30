@@ -6,3 +6,5 @@ public
 .terraform.*
 
 *.tfstate*
+
+.DS_Store

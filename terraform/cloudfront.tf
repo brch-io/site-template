@@ -43,6 +43,12 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     max_ttl                = local.cloudfront_ttl
   }
 
+  lambda_function_association {
+      event_type   = "viewer-request"
+      lambda_arn   = aws_lambda_function.redirect_lambda.qualified_arn
+      include_body = false
+  }
+
   restrictions {
     geo_restriction {
       restriction_type = "none"
